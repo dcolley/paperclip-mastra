@@ -1,0 +1,26 @@
+{
+  "name": "paperclip-mastra",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Open-source Paperclip AI clone — Mastra.ai + LM Studio + shadcn/ui",
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter web build",
+    "db:generate": "pnpm --filter @paperclip-mastra/db generate",
+    "db:migrate": "pnpm --filter @paperclip-mastra/db migrate",
+    "db:studio": "pnpm --filter @paperclip-mastra/db studio",
+    "workers:dev": "pnpm --filter @paperclip-mastra/scheduler dev",
+    "type-check": "pnpm -r type-check",
+    "lint": "pnpm -r lint"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0",
+    "prettier": "^3.0.0",
+    "eslint": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  }
+}
