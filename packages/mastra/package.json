@@ -1,5 +1,5 @@
 {
-  "name": "@paperclip-mastra/mastra",
+  "name": "@tourbillon/mastra",
   "version": "0.1.0",
   "private": true,
   "main": "./src/index.ts",
@@ -11,8 +11,8 @@
     "@mastra/mcp": "^0.10.0",
     "@ai-sdk/openai": "^1.0.0",
     "zod": "^3.23.0",
-    "@paperclip-mastra/db": "workspace:*",
-    "@paperclip-mastra/shared": "workspace:*"
+    "@tourbillon/db": "workspace:*",
+    "@tourbillon/shared": "workspace:*"
   },
   "devDependencies": {
     "typescript": "^5.4.0"

@@ -1,5 +1,5 @@
 {
-  "name": "@paperclip-mastra/shared",
+  "name": "@tourbillon/shared",
   "version": "0.1.0",
   "private": true,
   "main": "./src/index.ts",

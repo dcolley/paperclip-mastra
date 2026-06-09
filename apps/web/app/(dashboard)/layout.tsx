@@ -13,10 +13,9 @@ const navItems = [
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex h-screen overflow-hidden">
-      {/* Sidebar */}
       <aside className="w-56 border-r bg-card flex flex-col shrink-0">
         <div className="p-4 border-b">
-          <span className="font-bold text-lg tracking-tight">Paperclip</span>
+          <span className="font-bold text-lg tracking-tight">Tourbillon</span>
         </div>
         <nav className="flex-1 p-2 space-y-0.5">
           {navItems.map((item) => (
@@ -33,7 +32,6 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
           LM Studio — Local
         </div>
       </aside>
-      {/* Main content */}
       <main className="flex-1 overflow-y-auto bg-background">
         {children}
       </main>

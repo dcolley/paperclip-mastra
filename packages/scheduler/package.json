@@ -1,5 +1,5 @@
 {
-  "name": "@paperclip-mastra/scheduler",
+  "name": "@tourbillon/scheduler",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,9 +10,9 @@
   "dependencies": {
     "bullmq": "^5.0.0",
     "ioredis": "^5.3.0",
-    "@paperclip-mastra/db": "workspace:*",
-    "@paperclip-mastra/shared": "workspace:*",
-    "@paperclip-mastra/mastra": "workspace:*"
+    "@tourbillon/db": "workspace:*",
+    "@tourbillon/shared": "workspace:*",
+    "@tourbillon/mastra": "workspace:*"
   },
   "devDependencies": {
     "tsx": "^4.0.0",

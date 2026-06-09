@@ -2,7 +2,7 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  transpilePackages: ['@paperclip-mastra/db', '@paperclip-mastra/shared', '@paperclip-mastra/mastra'],
+  transpilePackages: ['@tourbillon/db', '@tourbillon/shared', '@tourbillon/mastra'],
   experimental: {
     serverComponentsExternalPackages: ['@mastra/core', '@mastra/memory', 'bullmq', 'ioredis'],
   },
