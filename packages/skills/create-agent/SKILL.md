@@ -1,0 +1,65 @@
+# SKILL: Hire and Create Agents
+
+This skill describes how to create new agent records in the company roster.
+
+---
+
+## §1 — When to Create an Agent
+
+Create a new agent when:
+- The org chart has a gap for a required capability
+- A goal requires skills not covered by existing agents
+- The board has approved a headcount increase
+
+**Always request board approval before creating an agent** unless you are the CEO and the company policy allows autonomous hires.
+
+---
+
+## §2 — Agent Creation Checklist
+
+Before calling the agents API:
+
+- [ ] Board approval obtained (or confirmed not required by policy)
+- [ ] Role is well-defined and distinct from existing agents
+- [ ] Appropriate skills assigned from company skill library
+- [ ] Tool tiers configured (Tier 1 auto; Tier 2 by role; Tier 3 by capability need)
+- [ ] Model chosen (default: use `LM_STUDIO_DEFAULT_MODEL` env var)
+- [ ] `reportsToId` set correctly in the org chart
+- [ ] Budget allocated
+- [ ] Heartbeat schedule configured (or left disabled for on-demand only)
+
+---
+
+## §3 — Skill Assignment by Role
+
+| Role | Required Skills | Optional Skills |
+|---|---|---|
+| ceo | control-plane, plan-to-tasks, create-agent, para-memory | company-specific strategy docs |
+| cto | control-plane, plan-to-tasks, para-memory | architecture docs |
+| engineer | control-plane, para-memory | repo-specific context |
+| pm | control-plane, plan-to-tasks, para-memory | product context |
+| qa | control-plane, para-memory | test standards |
+| designer | control-plane, para-memory | brand guidelines |
+
+---
+
+## §4 — Tool Tier Assignment by Role
+
+| Role | Tier 2 Toolsets | Tier 3 MCP Servers |
+|---|---|---|
+| ceo | comments, approvals, agent-management, planning, web-search | searxng-local |
+| cto | comments, approvals, planning | github-mcp |
+| engineer | comments, planning | github-mcp, filesystem-local |
+| pm | comments, approvals, planning | searxng-local |
+| qa | comments | filesystem-local |
+| designer | comments | filesystem-local |
+
+---
+
+## §5 — Post-Creation Steps
+
+After the agent record is created:
+1. Verify org chart integrity (reportsTo chain is not circular)
+2. Add a comment to the originating issue with the new agent ID and role
+3. Set the originating issue to `done`
+4. If applicable, create an onboarding issue assigned to the new agent: "Introduce yourself and review your inbox"
