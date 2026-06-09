@@ -1,4 +1,10 @@
-# paperclip-mastra
+# tourbillon
+
+> *Tourbillon* (French, /tuʁ.bi.jɔ̃/) — literally *whirlwind* or *vortex*; from the Old French *torb(i)illon*, rooted in Latin *turbo* (a spinning top, a whirlwind).
+> In horology, the tourbillon is the most complex escapement ever invented: a self-correcting rotating cage
+> that counteracts the pull of gravity on the movement's gears, keeping time with relentless precision.
+> The name fits here — a team of agents spinning continuously through work, self-correcting as they go,
+> driven by an inner heartbeat that never stops ticking.
 
 An open-source clone of [Paperclip AI](https://github.com/paperclipai/paperclip) built with:
 
@@ -34,8 +40,8 @@ A control plane for running teams of AI agents as a company:
 
 ```bash
 # Clone
-git clone https://github.com/dcolley/paperclip-mastra
-cd paperclip-mastra
+git clone https://github.com/dcolley/tourbillon
+cd tourbillon
 
 # Install dependencies
 pnpm install

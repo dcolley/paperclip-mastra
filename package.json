@@ -1,15 +1,15 @@
 {
-  "name": "paperclip-mastra",
+  "name": "tourbillon",
   "version": "0.1.0",
   "private": true,
-  "description": "Open-source Paperclip AI clone — Mastra.ai + LM Studio + shadcn/ui",
+  "description": "Open-source AI agent orchestration — Mastra.ai + LM Studio + shadcn/ui",
   "scripts": {
     "dev": "pnpm --filter web dev",
     "build": "pnpm --filter web build",
-    "db:generate": "pnpm --filter @paperclip-mastra/db generate",
-    "db:migrate": "pnpm --filter @paperclip-mastra/db migrate",
-    "db:studio": "pnpm --filter @paperclip-mastra/db studio",
-    "workers:dev": "pnpm --filter @paperclip-mastra/scheduler dev",
+    "db:generate": "pnpm --filter @tourbillon/db generate",
+    "db:migrate": "pnpm --filter @tourbillon/db migrate",
+    "db:studio": "pnpm --filter @tourbillon/db studio",
+    "workers:dev": "pnpm --filter @tourbillon/scheduler dev",
     "type-check": "pnpm -r type-check",
     "lint": "pnpm -r lint"
   },
