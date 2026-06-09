@@ -1,0 +1,22 @@
+{
+  "name": "@paperclip-mastra/scheduler",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "bullmq": "^5.0.0",
+    "ioredis": "^5.3.0",
+    "@paperclip-mastra/db": "workspace:*",
+    "@paperclip-mastra/shared": "workspace:*",
+    "@paperclip-mastra/mastra": "workspace:*"
+  },
+  "devDependencies": {
+    "tsx": "^4.0.0",
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0"
+  }
+}
